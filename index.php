@@ -359,7 +359,7 @@
 
   <div class="last" >
 
-   <a href="index.html" >   <button type="button" name="button" id="up" style=" background-color:#616161;"><i style="color:white;" class="fa fa-arrow-up"></i></button></a>
+   <a href="index.php" >   <button type="button" name="button" id="up" style=" background-color:#616161;"><i style="color:white;" class="fa fa-arrow-up"></i></button></a>
   </div>
 </footer>
 
