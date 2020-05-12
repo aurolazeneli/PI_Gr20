@@ -74,7 +74,7 @@ a:active {
 </head>
 
 <body>
-<?php include'header.php'?>
+<?php include'includes/header.php'?>
   <i><h1 style="text-align:center;text-emphasis-style: 122;
     text-shadow:1px 1px red;"> Finland Hotels</h1> </i>
 <div class="content display-container">
@@ -179,7 +179,7 @@ a:active {
     
          
          </div>
-         <?php include'footer.php'?>
+         <?php include'includes/footer.php'?>
          
          </body>
          </html>
