@@ -1,3 +1,6 @@
+<?php include "MySQL/db.php";?>
+<?php include "functions.php";?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -21,8 +24,12 @@
 
 <nav>
 
-    <form class="form-inline">
+    <form class="form-inline" action="index.php" method="post">
+
      <i class="fa fa-search" style="color:white" aria-hidden="true"></i>
+     <input type="search" name="search" placeholder="Search..." id="mysearch" style="width:200px; border: 0;
+    background: none;
+    -webkit-appearance: none; color: white" value="">
     <span style="margin-left:70%"> <i class="fa fa-facebook" style="color:white" aria-hidden="true"></i>
      <i class="fa fa-instagram" style="color:white" aria-hidden="true"></i>
      <i class="fa fa-youtube-play" style="color:white" aria-hidden="true"></i>
@@ -111,134 +118,12 @@
 <section style="margin-bottom:50px">
   <h5 style="text-align:center">SPECIAL OFFERS</h5>
   <div  class="row">
-  <div class="col"> <img src="images/maldiv.jpg" alt="Snow" style="width:100%">
-   <h6 style="font-size: 0.8rem; margin-top:5px">Kurumba Maldives</h6>
-  <div class="inline">
-   <div  style="font-size: 0.7rem; margin:1px">
-     <p style="margin:1px; font-size: 0.6rem;">Maldive/</p>
-     <p style="margin:1px; font-size: 0.6rem;">Vihamanafushi</p>
-     <i style="color:red;" class="fa fa-star"></i>
-     <i style="color:red" class="fa fa-star"></i>
-     <i style="color:red" class="fa fa-star"></i>
-     <i style="color:red" class="fa fa-star"></i>
-     <i style="color:red" class="fa fa-star"></i> </div>
-     <div class="v1">
-        <h6 style="font-size: 0.55rem; margin-bottom:1px; text-decoration-line: line-through;">90<i class="fa fa-dollar"></i></h6>
-    <h6 style="font-size: 0.8rem; color:red; margin-bottom:1px">85<i class="fa fa-dollar" style="color:red"></i></h6>
-     </div> </div></div>
-     <div   onmouseover="show_sidebar()" onmouseout="hide_sidebar()" class="col"> <img src="images/maldiv.jpg" alt="Snow" style="width:100%">
-    <!--   <div  id="box" class="overlay">
-         Details
-       </div>-->
-      <h6 style="font-size: 0.8rem; margin-top:5px">Kurumba Maldives</h6>
-     <div class="inline">
-      <div  style="font-size: 0.7rem; margin:1px">
-        <p style="margin:1px; font-size: 0.6rem;">Maldive/</p>
-        <p style="margin:1px; font-size: 0.6rem;">Vihamanafushi</p>
-        <i style="color:red;" class="fa fa-star"></i>
-        <i style="color:red" class="fa fa-star"></i>
-        <i style="color:red" class="fa fa-star"></i>
-        <i style="color:red" class="fa fa-star"></i>
-        <i style="color:red" class="fa fa-star"></i> </div>
-        <div class="v1">
-               <h6 style="font-size: 0.55rem; margin-bottom:1px; text-decoration-line: line-through;">90<i class="fa fa-dollar"></i></h6>
-       <h6 style="font-size: 0.8rem; color:red; margin-bottom:1px">85<i class="fa fa-dollar" style="color:red"></i></h6>
-        </div> </div></div>
-        <div class="col"> <img src="images/maldiv.jpg" alt="Snow" style="width:100%">
-         <h6 style="font-size: 0.8rem; margin-top:5px">Kurumba Maldives</h6>
-        <div class="inline">
-         <div  style="font-size: 0.7rem; margin:1px">
-           <p style="margin:1px; font-size: 0.6rem;">Maldive/</p>
-           <p style="margin:1px; font-size: 0.6rem;">Vihamanafushi</p>
-           <i style="color:red;" class="fa fa-star"></i>
-           <i style="color:red" class="fa fa-star"></i>
-           <i style="color:red" class="fa fa-star"></i>
-           <i style="color:red" class="fa fa-star"></i>
-           <i style="color:red" class="fa fa-star"></i> </div>
-           <div class="v1">
-                  <h6 style="font-size: 0.55rem; margin-bottom:1px; text-decoration-line: line-through;">90<i class="fa fa-dollar"></i></h6>
-          <h6 style="font-size: 0.8rem; color:red; margin-bottom:1px">85<i class="fa fa-dollar" style="color:red"></i></h6>
-           </div> </div></div>
-           <div class="col"> <img src="images/maldiv.jpg" alt="Snow" style="width:100%">
-            <h6 style="font-size: 0.8rem; margin-top:5px">Kurumba Maldives</h6>
-           <div class="inline">
-            <div  style="font-size: 0.7rem; margin:1px">
-              <p style="margin:1px; font-size: 0.6rem;">Maldive/</p>
-              <p style="margin:1px; font-size: 0.6rem;">Vihamanafushi</p>
-              <i style="color:red;" class="fa fa-star"></i>
-              <i style="color:red" class="fa fa-star"></i>
-              <i style="color:red" class="fa fa-star"></i>
-              <i style="color:red" class="fa fa-star"></i>
-              <i style="color:red" class="fa fa-star"></i>
-             </div>
-              <div class="v1">
-                <h6 style="font-size: 0.55rem; margin-bottom:1px; text-decoration-line: line-through;">90<i class="fa fa-dollar"></i></h6>
-                <i class="fas fa-dollar-sign" style="color:black;"></i>
+   <?php  readRows(); ?>
 
-             <h6 style="font-size: 0.8rem; color:red; margin-bottom:1px">85<i class="fa fa-dollar" style="color:red"></i></h6>
-              </div> </div></div>
 </div>
 <div style="margin-top:4%" class="row">
-  <div class="col"> <img src="images/maldiv.jpg" alt="Snow" style="width:100%">
-   <h6 style="font-size: 0.8rem; margin-top:5px">Kurumba Maldives</h6>
-  <div class="inline">
-   <div  style="font-size: 0.7rem; margin:1px">
-     <p style="margin:1px; font-size: 0.6rem;">Maldive/</p>
-     <p style="margin:1px; font-size: 0.6rem;">Vihamanafushi</p>
-     <i style="color:red;" class="fa fa-star"></i>
-     <i style="color:red" class="fa fa-star"></i>
-     <i style="color:red" class="fa fa-star"></i>
-     <i style="color:red" class="fa fa-star"></i>
-     <i style="color:red" class="fa fa-star"></i> </div>
-     <div class="v1">
-            <h6 style="font-size: 0.55rem; margin-bottom:1px; text-decoration-line: line-through;">90<i class="fa fa-dollar"></i></h6>
-    <h6 style="font-size: 0.8rem; color:red; margin-bottom:1px">85<i class="fa fa-dollar" style="color:red"></i></h6>
-     </div> </div></div>
-     <div class="col"> <img src="images/maldiv.jpg" alt="Snow" style="width:100%">
-      <h6 style="font-size: 0.8rem; margin-top:5px">Kurumba Maldives</h6>
-     <div class="inline">
-      <div  style="font-size: 0.7rem; margin:1px">
-        <p style="margin:1px; font-size: 0.6rem;">Maldive/</p>
-        <p style="margin:1px; font-size: 0.6rem;">Vihamanafushi</p>
-        <i style="color:red;" class="fa fa-star"></i>
-        <i style="color:red" class="fa fa-star"></i>
-        <i style="color:red" class="fa fa-star"></i>
-        <i style="color:red" class="fa fa-star"></i>
-        <i style="color:red" class="fa fa-star"></i> </div>
-        <div class="v1">
-               <h6 style="font-size: 0.55rem; margin-bottom:1px; text-decoration-line: line-through;">90<i class="fa fa-dollar"></i></h6>
-       <h6 style="font-size: 0.8rem; color:red; margin-bottom:1px">85<i class="fa fa-dollar" style="color:red"></i></h6>
-        </div> </div></div>
-        <div class="col"> <img src="images/maldiv.jpg" alt="Snow" style="width:100%">
-        <h6 style="font-size: 0.8rem; margin-top:5px">Kurumba Maldives</h6>
-        <div class="inline">
-         <div  style="font-size: 0.7rem; margin:1px">
-           <p style="margin:1px; font-size: 0.6rem;">Maldive/</p>
-           <p style="margin:1px; font-size: 0.6rem;">Vihamanafushi</p>
-           <i style="color:red;" class="fa fa-star"></i>
-           <i style="color:red" class="fa fa-star"></i>
-           <i style="color:red" class="fa fa-star"></i>
-           <i style="color:red" class="fa fa-star"></i>
-           <i style="color:red" class="fa fa-star"></i> </div>
-           <div class="v1">
-                  <h6 style="font-size: 0.55rem; margin-bottom:1px; text-decoration-line: line-through;">90<i class="fa fa-dollar"></i></h6>
-          <h6 style="font-size: 0.8rem; color:red; margin-bottom:1px">85<i class="fa fa-dollar" style="color:red"></i></h6>
-           </div> </div></div>
-           <div class="col"> <img src="images/maldiv.jpg" alt="Snow" style="width:100%">
-             <h6 style="font-size: 0.8rem; margin-top:5px">Kurumba Maldives</h6>
-           <div class="inline">
-            <div  style="font-size: 0.7rem; margin:1px">
-              <p style="margin:1px; font-size: 0.6rem;">Maldive/</p>
-              <p style="margin:1px; font-size: 0.6rem;">Vihamanafushi</p>
-              <i style="color:red;" class="fa fa-star"></i>
-              <i style="color:red" class="fa fa-star"></i>
-              <i style="color:red" class="fa fa-star"></i>
-              <i style="color:red" class="fa fa-star"></i>
-              <i style="color:red" class="fa fa-star"></i> </div>
-              <div class="v1">
-                     <h6 style="font-size: 0.55rem; margin-bottom:1px; text-decoration-line: line-through;">90<i class="fa fa-dollar"></i></h6>
-             <h6 style="font-size: 0.8rem; color:red; margin-bottom:1px">85<i class="fa fa-dollar" style="color:red"></i></h6>
-              </div> </div></div>
+
+ <?php  readRows1(); ?>
 </div>
 
 </section>
@@ -272,11 +157,11 @@
   <h3 style="color:#120f57; text-align: center">Don't let our campaigns escape!</h3>
   <p  style="color:#120f57; text-align: center; width:80%; margin:0 auto">Don't decide without having to look at our easy booking campaigns that we have updated for you. With your early bookings you can plan your holiday at very affordable rates and your time and money will be in your pocket!</p>
 
-  <div class="row2" style="width: 95%;margin-left: 2%; margin-top:50px">
-    <?php $photos1 = array("images/rome.jpg","images/rome.jpg","images/rome.jpg","images/rome.jpg","images/rome.jpg","images/rome.jpg" );
-           for ($i=0; $i <5; $i++) {
-            echo "  <div class=\"column2\">
-                <img  src=\"$photos1[$i]\"  style=\"width:100%; \">
+  <div class="row2" style="width: 95%;margin-left: 2%; margin-top:50px;">
+    <?php $photos1 = array("images/historical.png","images/adventure.png","images/economic.png","images/family.png","images/modern.png","images/festival.png" );
+           for ($i=0; $i <6; $i++) {
+            echo "  <div class=\"column4\" style= \"background-image:url('$photos1[$i]')  \">
+
               </div>";
            } ?>
 </div>
