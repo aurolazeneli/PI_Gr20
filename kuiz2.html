@@ -1,4 +1,4 @@
-<!DOCTYPE> 
+<!DOCTYPE html> 
 <html> 
 <head> 
 <style> 
@@ -70,7 +70,7 @@ button:hover{
 <body> 
 <div id="header">
 
-<h1>Kuiz i letersise shqiptare </h1>
+<h1>Variablat Superglobale </h1>
 </div> 
 <div class="quiz-container">
   <div id="quiz"></div>
@@ -86,29 +86,31 @@ button:hover{
   const myQuestions = [
    
     {
-      question: "Cilat jane dy drejtimet kryesore te letersise boterore te shekullit XIX?",
+      question: "Which one is a superglobal variable ?",
       answers: {
-        a: "Realizmi dhe simbolizmi",
-        b: "Sentimentalizmi dhe iluminizmi",
-        c: "Impresionizmi dhe kubizmi",
+        a: "$_SERVER",
+        b: "fileto()",
+       
+        c: "str_replace"
       },
       correctAnswer: "a"
     },
       {
-      question: "Cili eshte libri i pare i pare ndonjehere",
+      question: "$_GLOBALS ____ ?",
       answers: {
-        a: "Formula e Pagezimit ",
-        b: "Meshari",
-        c: "Epi i Gilgameshit"
+        a: "Accesses global variables from inside function ",
+        b: "Accesses global variables from outside function",
+        c: "Accesses global variables from anywhere"
       },
       correctAnswer: "c"
     },
     {
-      question: "Cili nga keta autore  i perket periudhes se Rilindjes? ",
+      question: " $_POST is used with the metod? ",
       answers: {
-        a: "Dante Aligeri",
-        b: "Uilliam Shekspiri",
-        c: "Xhorxh Bajroni",
+        a: "GET",
+        b: "Two of the options",
+        c: "POST"
+        
       },
       correctAnswer: "b"
     }
@@ -151,7 +153,7 @@ function showResults() {
     // i merr krejt pergjigjet e sakta 
     const answerContainers = quizContainer.querySelectorAll(".answers");
 
-    // me kshyr qfar pergjigje jep perdoruesi 
+    // me shiku qfar pergjigje jep perdoruesi 
     let numCorrect = 0;
 
     // per secilen pytje kontrollon nese pergjijga e sakt e bon me t gjelber krejt pytjen nese jo(gabim ose pa plotsu)  me t kuqe 
