@@ -70,7 +70,7 @@ button:hover{
 <body> 
 <div id="header">
 
-<h1>Variablat Superglobale </h1>
+<h1>PHP general </h1>
 </div> 
 <div class="quiz-container">
   <div id="quiz"></div>
@@ -79,40 +79,37 @@ button:hover{
 <button id="next">Next Question</button>
 <button id="submit">Submit Quiz</button>
 <div id="results"></div>
-
 <a href="game.php">Kthehu ne faqen Paraprake </a>
 <script>
 (function() {
   const myQuestions = [
-   
     {
-      question: "Which one is a superglobal variable ?",
+      question: "PHP stands for",
       answers: {
-        a: "$_SERVER",
-        b: "fileto()",
-       
-        c: "str_replace"
+        a: "Hypertext Preprocessor",
+        b: "Programing script",
+        c: "Hyper Text Markup Language"
       },
       correctAnswer: "a"
     },
       {
-      question: "$_GLOBALS ____ ?",
+      question: "PHP scripts are executed on ",
       answers: {
-        a: "Accesses global variables from inside function ",
-        b: "Accesses global variables from outside function",
-        c: "Accesses global variables from anywhere"
-      },
-      correctAnswer: "c"
-    },
-    {
-      question: " $_POST is used with the metod? ",
-      answers: {
-        a: "GET",
-        b: "Two of the options",
-        c: "POST"
-        
+        a: "Hardware",
+        b: "Software",
+        c: "Anywhere"
       },
       correctAnswer: "b"
+    },
+    
+    {
+      question: "PHP files have extension ",
+      answers: {
+        a: ".p",
+        b: ".ppt",
+        c: ".php"
+      },
+      correctAnswer: "c"
     }
   ];
 
@@ -123,7 +120,7 @@ button:hover{
     
     myQuestions.forEach((currentQuestion, questionNumber) => {
       
-      const answers = [];   // qetu ruhet lista e pergjigjeve 
+      const answers = [];   // ruhet lista e pergjigjeve 
 
      // i shtojna button elemet seciles pergjigje perpara 
       for (letter in currentQuestion.answers) {
@@ -149,11 +146,12 @@ button:hover{
     // krejt listen output e kombinojna me ni string 
     quizContainer.innerHTML = output.join("");
   }
-function showResults() {
+
+		function showResults() {
     // i merr krejt pergjigjet e sakta 
     const answerContainers = quizContainer.querySelectorAll(".answers");
 
-    // me shiku qfar pergjigje jep perdoruesi 
+    // me kshyr qfar pergjigje jep perdoruesi 
     let numCorrect = 0;
 
     // per secilen pytje kontrollon nese pergjijga e sakt e bon me t gjelber krejt pytjen nese jo(gabim ose pa plotsu)  me t kuqe 
@@ -226,4 +224,4 @@ function showResults() {
 })();
 </script>
 </body>
-</html> 
+</html>
