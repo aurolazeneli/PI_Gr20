@@ -34,29 +34,44 @@
 <div class="gallery" >
   <a target="_blank" href="kuiz1.html">
       <img src="images/quiz.png"
-		alt="Kuiz nga letërsia shqiptare."
+		alt="php"
 		 width="600" height="400" >
-                  <div class="desc">Kuiz nga letërsia shqiptare</div>
+                  <div class="desc">Pyetje rreth PHP !</div>
   </a>
 </div>
 <div class="gallery">
   <a target="_blank" href="kuiz2.html">
       <img src="images/quiz.png"
-		alt="Kuiz nga letërsia botërore."
+		alt="globals"
 		 width="600" height="400" >
-                  <div class="desc">Kuiz nga letërsia botërore</div>
+                  <div class="desc">Variablat superglobale</div>
   </a>
 </div>
 <div class="gallery" >
-  <a target="_blank" href="quiz.html">
+  <a target="_blank" href="kuiz3.html">
       <img src="images/quiz.png"
-		alt="Sa i njihni veprat e autoreve shqiptare?"
+		alt="string"
 		 width="600" height="400" >
-                  <div class="desc">Autori - Vepra</div>
+                  <div class="desc">Manipulimet me strings</div>
+  </a>
+</div>
+
+<div class="gallery">
+<a target="_blank" href="supg.php">
+      <img src="images/purple.jpg" 	alt="Te dhena per serverin"
+		 width="600" height="400">
+                  <div class="desc">$_REQUEST</div>
   </a>
 </div>
 </div>
+
+
+
+
+
+
 <?php include ('footer.php'); ?>
+
 
 </body>
 </html>
