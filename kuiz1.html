@@ -1,4 +1,4 @@
-<!DOCTYPE> 
+<!DOCTYPE html> 
 <html> 
 <head> 
 <style> 
@@ -70,7 +70,7 @@ button:hover{
 <body> 
 <div id="header">
 
-<h1>Kuiz i letersise shqiptare </h1>
+<h1>PHP general </h1>
 </div> 
 <div class="quiz-container">
   <div id="quiz"></div>
@@ -84,30 +84,30 @@ button:hover{
 (function() {
   const myQuestions = [
     {
-      question: "Cili eshte dokumenti i pare i gjuhes shqipe?",
+      question: "PHP stands for",
       answers: {
-        a: "Fjalori i Arnold Van Harfit",
-        b: "Formula e Pagezimit",
-        c: "Meshari"
-      },
-      correctAnswer: "b"
-    },
-      {
-      question: "Cili eshte libri i pare shqip?",
-      answers: {
-        a: "Meshari - Gjon Buzuku",
-        b: "Histori e Skenderbeut - Marin Barleti",
-        c: "Formula e Pagezimit - Pal Engjelli"
+        a: "Hypertext Preprocessor",
+        b: "Programing script",
+        c: "Hyper Text Markup Language"
       },
       correctAnswer: "a"
     },
+      {
+      question: "PHP scripts are executed on ",
+      answers: {
+        a: "Hardware",
+        b: "Software",
+        c: "Anywhere"
+      },
+      correctAnswer: "b"
+    },
     
     {
-      question: "Si quhet autori i Abetares se pare ne gjuhen shqipe? ",
+      question: "PHP files have extension ",
       answers: {
-        a: "Naim Frasheri",
-        b: "Fan Noli ",
-        c: "Naum Veqilharxhi",
+        a: ".p",
+        b: ".ppt",
+        c: ".php"
       },
       correctAnswer: "c"
     }
@@ -120,7 +120,7 @@ button:hover{
     
     myQuestions.forEach((currentQuestion, questionNumber) => {
       
-      const answers = [];   // qetu ruhet lista e pergjigjeve 
+      const answers = [];   // ruhet lista e pergjigjeve 
 
      // i shtojna button elemet seciles pergjigje perpara 
       for (letter in currentQuestion.answers) {
