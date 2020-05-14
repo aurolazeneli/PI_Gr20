@@ -1,13 +1,32 @@
 <?php
 error_reporting(E_ERROR | E_WARNING | E_PARSE);
 session_start();
+ class customException extends Exception {
+  public function errorMessage() {
+    //error message
+    $errorMsg = 'Database did not connect';
+    return $errorMsg;
+  }
+}
 
 //initialising variables
 
 $username = "";
 $email = "";
 $errors = array();
-$db = mysqli_connect('localhost','root','','mydb') or die("could not connect to database");
+try{
+$db =  new MySQLi('localhost','root','','mydb') ;
+if(mysqli_connect_error()){
+
+ throw new Exception(mysqli_connect_error());
+
+
+}
+}
+catch (Exception $e){
+ echo $e -> errorMessage();
+}
+finally{
 
 //Register users
 $username = mysqli_real_escape_string($db, $_POST['username']);
@@ -64,6 +83,7 @@ if(count($errors) == 0){
    header('location: login.php');
 
 
+}
 }
 
  
