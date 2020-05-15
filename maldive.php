@@ -75,7 +75,7 @@ a:active {
 </head>
 
 <body>
-<?php include'header.php'?>
+<?php include'include/header.php'?>
   <i><h1 style="text-align:center;text-emphasis-style: 122;
     text-shadow:1px 1px red;"> Maldive Hotels</h1> </i>
 <div class="content display-container">
@@ -93,7 +93,7 @@ a:active {
 <div class="row">
   
         <div class="column">
-          <a href="maldive1.php">
+          <a href="25.php">
 <div class="card">
     
         <img src="images/m1.1.jpg" alt=" Hotel" style="width:100%">
@@ -108,7 +108,7 @@ a:active {
 
         
         <div class="column">
-          <a href="maldive2.php">
+          <a href="26.php">
       <div class="card" >
             <img src="images/m2.1.jpg" alt="Hotel" style="width:100%">
             <p1 style="font-size:19px;
@@ -121,7 +121,7 @@ a:active {
         </div>
 
         <div class="column">
-          <a href="maldive3.php">
+          <a href="27.php">
         <div class="card" >
             <img src="images/m3.1.jpg" alt="Hotel " style="width:100%">
             <p1 style="font-size:19px;
@@ -139,7 +139,7 @@ a:active {
     <br>
     <div class="row2">
             <div class="column">
-              <a href="maldive4.php">
+              <a href="28.php">
            <div class="card">
             <img src="images/m4.1.jpg" alt="Hotel" style="width:100%">
             <p1 style="font-size:19px;
@@ -153,7 +153,7 @@ a:active {
     
             
             <div class="column">
-              <a href="maldive5.php">
+              <a href="29.php">
           <div class="card" >
                 <img src="images/m5.1.jpg" alt=" Hotel" style="width:100%">
                 <p1 style="font-size:19px;
@@ -166,7 +166,7 @@ a:active {
             </div>
     
             <div class="column">
-              <a href="maldive6.php">
+              <a href="30.php">
             <div class="card" >
                 <img src="images/m6.1.jpg" alt=" Hotel" style="width:100%">
                 <p1 style="font-size:19px;
@@ -181,6 +181,6 @@ a:active {
          
          </div>
          
-        <?php include'footer.php'?>
+        <?php include'include/footer.php'?>
          </body>
          </html>
