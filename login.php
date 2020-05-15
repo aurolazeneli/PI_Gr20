@@ -1,4 +1,47 @@
-
+<?php
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
+ $connection = mysqli_connect('localhost','root','','mydb');
+if(!$connection){
+      die("Database connection failed");
+   }
+  
+$username = $password = "";
+$username_err = $password_err = "";
+// Processing form data when form is submitted
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+    // Check if username is empty
+    if(empty(trim($_POST["username"]))){
+        $username_err = "Please enter username.";
+    } else{
+        $username = trim($_POST["username"]);
+    }
+    // Check if password is empty
+    if(empty(trim($_POST["password"]))){
+        $password_err = "Please enter your password.";
+    } else{
+        $password = trim($_POST["password"]);
+    }
+    // Validate credentials
+    if(empty($username_err) && empty($password_err)){
+        // Prepare a select statement
+        $sql = "SELECT username, password FROM registration WHERE username = '$username' AND  password='$password'";
+            $result = mysqli_query($connection, $sql);
+            while ($row = mysqli_fetch_assoc($result) ) {
+              $expiration = time()+(60*60*24*365*4);
+setcookie($username,$password,$expiration);
+if(isset($_COOKIE['$username'])){
+    $someone =  $_COOKIE['$username'];
+    }else{
+    $someone = "";
+    }
+           header("location: index.php");
+             }
+        }
+        else  {
+          echo "no search result";
+        }
+    }
+?>
 <!DOCTYPE html>
     <html>
 <head>
@@ -37,16 +80,23 @@
 		<div class="white-panel">
 			<div class="login-show">
 				<h2>LOGIN</h2>
+			
 				
-				<form method="post" action="validation2.php">
+				<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+					<div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
+				
 				<input type="text" placeholder="Username" name="username">
-				
+				  <span class="help-block"><?php echo $username_err; ?></span>
+            </div>
+					 <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+               
 				<input type="password" placeholder="Password" name="password">
-					
+					 <span class="help-block"><?php echo $password_err; ?></span>
+            </div>
 				<input style="background-color:red;" id="butoni" type="submit" value="Login" name="login">
 					<input  type="checkbox" name="remember" value="1"/>Remember me
 				<p>Not a user?<a href="register.php"><b>Register Here</b></a></p>	
-				
+					
 				</form>
 				<a href="">Forgot password?</a>
 			</div>
