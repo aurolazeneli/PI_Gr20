@@ -76,7 +76,7 @@ a:active {
 </head>
 
 <body>
-<?php include'header.php'?>
+<?php include'includes/head.php'?>
 <i><h1 style="text-align:center;text-emphasis-style: 122;
 text-shadow:1px 1px red;"> Dubai Hotels</h1> </i>
 <div class="content display-container">
@@ -94,7 +94,7 @@ text-shadow:1px 1px red;"> Dubai Hotels</h1> </i>
 <div class="row">
   
       <div class="column">
-         <a href="dubai1.php">
+         <a href="1.php">
        <div class="card">
         <img src="images/d1.1.jpg" alt=" Hotel" style="width:100%">
         <p1 style="font-size:19px;
@@ -108,7 +108,7 @@ text-shadow:1px 1px red;"> Dubai Hotels</h1> </i>
 
         
         <div class="column">
-          <a href="dubai2.php">
+          <a href="2.php">
       <div class="card" >
             <img src="images/d2.1.jpg" alt="Hotel" style="width:100%">
             <p1 style="font-size:19px;
@@ -121,7 +121,7 @@ text-shadow:1px 1px red;"> Dubai Hotels</h1> </i>
         </div>
 
         <div class="column">
-          <a href="dubai3.php">
+          <a href="3.php">
         <div class="card" >
             <img src="images/d3.1.jpg" alt="Hotel " style="width:100%">
             <p1 style="font-size:19px;
@@ -139,7 +139,7 @@ text-shadow:1px 1px red;"> Dubai Hotels</h1> </i>
     <br>
     <div class="row2">
             <div class="column">
-              <a href="dubai4.php">
+              <a href="4.php">
            <div class="card">
             <img src="images/d4.1.jpg" alt="Hotel" style="width:100%">
             <p1 style="font-size:19px;
@@ -153,7 +153,7 @@ text-shadow:1px 1px red;"> Dubai Hotels</h1> </i>
     
             
             <div class="column">
-              <a href="dubai5.php">
+              <a href="5.php">
           <div class="card" >
                 <img src="images/d5.1.jpg" alt=" Hotel" style="width:100%">
                 <p1 style="font-size:19px;
@@ -166,7 +166,7 @@ text-shadow:1px 1px red;"> Dubai Hotels</h1> </i>
             </div>
     
             <div class="column">
-              <a href="dubai6.php">
+              <a href="6.php">
             <div class="card" >
                 <img src="images/d6.1.jpg" alt=" Hotel" style="width:100%">
                 <p1 style="font-size:19px;
@@ -182,6 +182,6 @@ text-shadow:1px 1px red;"> Dubai Hotels</h1> </i>
          </div>
          <br>
          <br>
-         <?php include'footer.php'?>
+         <?php include'includes/footer.php'?>
          </body>
          </html>
