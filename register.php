@@ -39,14 +39,14 @@
 			<div style="height:100% !important" class="login-show">
 			<h2  margin-top:-10%">REGISTER</h2>
 				<form method="post" action="register.php" >
-					<?php include 'welcome.php'; ?>
+					
 				
-					<input style="padding:1%" type="text" placeholder="Username" name="username">
-					<input style="padding:1%"  type="text" placeholder="Email" name="email">
+					<input style="padding:3%" type="text" placeholder="Username" name="username">
+					<input style="padding:3%"  type="text" placeholder="Email" name="email">
 			
-				<input style="padding:1%"  type="password" placeholder="Password" name="password">
+				<input style="padding:3%"  type="password" placeholder="Password" name="password">
 				
-				<input style="padding:1%"  type="password" placeholder="Confirm Password" name="cpassword">
+				<input style="padding:3%"  type="password" placeholder="Confirm Password" name="cpassword">
 			
 				<input style="background-color:red;"  id="butoni" type="submit" value="Register" name="reg_user">
 					<p>Have a user?<a href="login.php"><b>Login Here</b></a></p>
