@@ -75,7 +75,7 @@ a:active {
 </head>
 
 <body>
-<?php include'header.php'?>
+<?php include'include/head.php'?>
   <i><h1 style="text-align:center;text-emphasis-style: 122;
     text-shadow:1px 1px red;"> Switzerland Hotels</h1> </i>
 <div class="content display-container">
@@ -93,7 +93,7 @@ a:active {
 <div class="row">
   
         <div class="column">
-          <a href="switzerland1.php">
+          <a href="31.php">
 <div class="card">
     
         <img src="images/s1.1.jpg" alt=" Hotel" style="width:100%">
@@ -108,7 +108,7 @@ a:active {
 
         
         <div class="column">
-          <a href="switzerland2.php">
+          <a href="322.php">
       <div class="card" >
             <img src="images/s2.1.jpg" alt="Hotel" style="width:100%">
             <p1 style="font-size:19px;
@@ -121,7 +121,7 @@ a:active {
         </div>
 
         <div class="column">
-          <a href="switzerland3.php">
+          <a href="33.php">
         <div class="card" >
             <img src="images/s3.1.jpg" alt="Hotel " style="width:100%">
             <p1 style="font-size:19px;
@@ -139,7 +139,7 @@ a:active {
     <br>
     <div class="row2">
             <div class="column">
-              <a href="switzerland4.php">
+              <a href="34.php">
            <div class="card">
             <img src="images/s4.1.jpg" alt="Hotel" style="width:100%">
             <p1 style="font-size:19px;
@@ -153,7 +153,7 @@ a:active {
     
             
             <div class="column">
-              <a href="switzerland5.php">
+              <a href="35.php">
           <div class="card" >
                 <img src="images/s5.5.jpg" alt=" Hotel" style="width:100%">
                 <p1 style="font-size:19px;
@@ -166,7 +166,7 @@ a:active {
             </div>
     
             <div class="column">
-              <a href="switzerland6.php">
+              <a href="36.php">
             <div class="card" >
                 <img src="images/s6.1.jpg" alt=" Hotel" style="width:100%">
                 <p1 style="font-size:19px;
@@ -180,6 +180,6 @@ a:active {
     
          
          </div>
-         <?php include'footer.php'?>
+         <?php include'include/footer.php'?>
          </body>
          </html>
