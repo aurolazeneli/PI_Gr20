@@ -74,7 +74,7 @@ a:active {
 </head>
 
 <body>
-<?php include'includes/header.php'?>
+<?php include'includes/head.php'?>
   <i><h1 style="text-align:center;text-emphasis-style: 122;
     text-shadow:1px 1px red;"> Finland Hotels</h1> </i>
 <div class="content display-container">
@@ -92,7 +92,7 @@ a:active {
 <div class="row">
   
         <div class="column">
-          <a href="finland1.html">
+          <a href="7.php">
 <div class="card">
     
         <img src="images/f1.1.jpg" alt=" Hotel" style="width:100%">
@@ -107,7 +107,7 @@ a:active {
 
         
         <div class="column">
-          <a href="finland2.html">
+          <a href="8.php">
       <div class="card" >
             <img src="images/f2.1.jpg" alt="Hotel" style="width:100%">
             <p1 style="font-size:19px;
@@ -120,7 +120,7 @@ a:active {
         </div>
 
         <div class="column">
-          <a href="finland3.html">
+          <a href="9.php">
         <div class="card" >
             <img src="images/f3.1.jpg" alt="Hotel " style="width:100%">
             <p1 style="font-size:19px;
@@ -138,7 +138,7 @@ a:active {
     <br>
     <div class="row2">
             <div class="column">
-              <a href="finland4.html">
+              <a href="10.php">
            <div class="card">
             <img src="images/f4.1.jpg" alt="Hotel" style="width:100%">
             <p1 style="font-size:19px;
@@ -152,7 +152,7 @@ a:active {
     
             
             <div class="column">
-              <a href="finland5.html">
+              <a href="11.php">
           <div class="card" >
                 <img src="images/f5.1.jpg" alt=" Hotel" style="width:100%">
                 <p1 style="font-size:19px;
@@ -165,7 +165,7 @@ a:active {
             </div>
     
             <div class="column">
-              <a href="finland6.html">
+              <a href="12.php">
             <div class="card" >
                 <img src="images/f6.2.jpg" alt=" Hotel" style="width:100%">
                 <p1 style="font-size:19px;
