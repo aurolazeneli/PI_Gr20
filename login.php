@@ -34,7 +34,7 @@ if(isset($_COOKIE['$username'])){
     }else{
     $someone = "";
     }
-           header("location: index.php");
+           header("location: searchflight.php");
              }
         }
         else  {
@@ -48,6 +48,8 @@ if(isset($_COOKIE['$username'])){
     <title>
      Login
     </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -61,6 +63,7 @@ if(isset($_COOKIE['$username'])){
 
 </head>
 <body>
+     <?php include "includes/head.php" ?>
 	
     <div class="login-reg-panel">
 		<div class="login-info-box">
@@ -105,5 +108,6 @@ if(isset($_COOKIE['$username'])){
 	</div>
 	
     </body>
+   
 
 </html>
