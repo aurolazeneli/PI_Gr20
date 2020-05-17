@@ -6,6 +6,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+  .button {
+  background-color:blue; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;  
+}
+
+.button2 {font-size: 12px;}
 * {
   box-sizing: border-box;
 }
@@ -87,7 +100,8 @@ echo readfile("newfile.txt");
 
      </div>
 </div>
-
+<a href="game.php">
+<button class="button button2">Play our game</button> </a>
 <?php include'footer.php'?>
 </body>
 </html>
