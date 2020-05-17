@@ -32,7 +32,7 @@
         <p1 style="font-size:19px;
         text-shadow:1px 1px red;">Water Breeze </p1>
         <p class="price">ALL 9,201</p>
-        <p1>Located in South Male Atoll</p1>
+        <p1>Located in South Atoll</p1>
     </div>
 </a>
         </div>
