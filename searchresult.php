@@ -59,7 +59,7 @@ else  {
   <script src="jquery-3.4.1.min.js"></script>
   </head>
   <body>
-
+<?php include "includes/head.php"; ?>
     <section>
       <table class="table table-striped" style="width:70%; align:center; margin:160px 60px;">
   <thead>
