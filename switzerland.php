@@ -59,7 +59,7 @@
             <p1 style="font-size:19px;
         text-shadow:1px 1px red;">TouchBed Gallen</p1>
             <p class="price">ALL 8,313</p>
-            <p1> 400 m from city centre</p1>
+            <p1> 400m from City Center</p1>
             
      </div>
 </a>
