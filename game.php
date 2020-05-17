@@ -29,7 +29,7 @@
 
 </head>
 <body>
-<?php include ('header.php'); ?>
+<?php include ('includes/head.php'); ?>
 <div style="margin-left:60px; margin-right:60px;">
 <div class="gallery" >
   <a target="_blank" href="kuiz1.html">
@@ -70,7 +70,7 @@
 
 
 
-<?php include ('footer.php'); ?>
+<?php include ('includes/footer.php'); ?>
 
 
 </body>
