@@ -89,6 +89,10 @@ function showSlides(n) {
 
     <?php rate(1); ?>
    </td>
+    <td style="padding-left:200px">
+     <pre style="font-style: Arial;"> If you like the hotel than you can contact us for reservation
+by the number below or you can get more details from us clicking
+the button! </pre>
 
  </tr>
  </table>
