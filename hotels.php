@@ -47,7 +47,7 @@ fclose($myfile);
 <div class="articles">
     <div class="box">
         <a href="greece.php"><img class="imgs" src="images/g3.1.PNG" alt=""></a>
-        <a href="greece.php"><h3> Greece</h3></a>
+        <a href="greece.php"><h3> Greece</h3> </a>
         
         <?php
 echo readfile("greece.txt");
@@ -79,7 +79,7 @@ echo readfile("maldives.txt");
         <a href="switzerland.php"><h3>Switzerland</h3></a>
         <?php
 $myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
-$txt = "With lakes, forests, mountains and clean air Switzerland has much to offer visitors. The tourism sector is one of the main drivers of the Swiss economy. With 35.6 million overnight stays in 2015, the Swiss tourism industry generated around 2.8% of the country’s gross domestic product, or a total of CHF 17.4 billion. More than 170,000 people (full-time-equivalents) work in the tourism industry. In 2015 guests from Germany racked up the most overnight stays Europe-wide (4 million). /n";
+$txt = "With lakes, forests, mountains and clean air Switzerland has much to offer visitors. The tourism is one of the main drivers of the Swiss economy. With 35.6 million overnight stays in 2015, the Swiss tourism industry generated around 2.8% of the country’s gross domestic product, or a total of CHF 17.4 billion. More than 170,000 people (full-time-equivalents) work in the tourism industry. In 2015 guests from Germany racked up the most overnight stays Europe-wide (4 million). /n";
 fwrite($myfile, $txt);
 fclose($myfile);
 echo readfile("newfile.txt");
