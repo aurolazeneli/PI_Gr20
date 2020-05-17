@@ -101,6 +101,16 @@ display: block;
 font-size: 100%;
 font-style: normal;
 
+  
+padding: 5px 10px;
+text-align:center;
+text-decoration: none;
+}
+</style>
+<span class="form-inline"> <a href="contactus.php"><button type="button" name="button" style="margin-left:50px; margin-right:30px;">Contact Us!</button></a>  <a href="tel:012345678" >012345678</a>
+   </td>
+
+
  </tr>
  </table>
  </p>
