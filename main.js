@@ -1,22 +1,23 @@
 
-function show_sidebar()
-{
-  var x = document.getElementById("box");
-document.getElementById('box').style.visibility="visible";
-x.style.WebkitAnimation = "mymove 1s"; // Code for Chrome, Safari and Opera
-x.style.animation = "mymove 1s ";
-}
-
-function hide_sidebar()
-{
-document.getElementById('box').style.visibility="hidden";
-}
-
-$('#box').hide();
-
-$('.col').mouseover(function () {
-      $('#box').show();
+jQuery(document).ready(function($){
+$("#mysearch").keyup(function(){
+	$.ajax({
+	type: "POST",
+	url: "readdata.php",
+	data:'keyword='+$(this).val(),
+	beforeSend: function(){
+		$("#mysearch").css("background","#transparent url(images/ajax-loader.gif) no-repeat 165px");
+	},
+	success: function(data){
+		$("#suggesstion-box").show();
+		$("#suggesstion-box").html(data);
+		$("#mysearch").css("background","#transparent");
+	}
+	});
 });
-$('.col').mouseout(function () {
-      $('#box').hide();
 });
+
+function selectCountry(val) {
+$("#mysearch").val(val);
+$("#suggesstion-box").hide();
+}
