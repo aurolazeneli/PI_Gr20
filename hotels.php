@@ -33,7 +33,7 @@ body {
 </head>
 <body>
     <?php
-include('header.php'); ?>
+include('includes/head.php'); ?>
 
 <br>
   <div class="articles">
@@ -101,7 +101,7 @@ echo readfile("newfile.txt");
      </div>
 </div>
 <a href="game.php">
-<button class="button button2">Play our game</button> </a>
-<?php include'footer.php'?>
+<button class="button button2">Do you want to play a game?</button> </a>
+<?php include'includes/footer.php'?>
 </body>
 </html>
