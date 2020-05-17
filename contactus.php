@@ -1,4 +1,5 @@
 <?php include 'formprocess.php'; ?>
+<?php include 'includes/head.php'; ?>
 
 
 
