@@ -18,7 +18,7 @@
 <script src="jquery-3.4.1.min.js"></script>
 </head>
 <body>
-<?php include'includes/header.php'?>
+<?php include'includes/head.php'?>
 <i> <p style="text-align:center;font-size:xx-large;text-shadow:1px 1px red;"><?php name(2); ?> </p> </i>
 
 <div class="container" style="align-content: center;">
