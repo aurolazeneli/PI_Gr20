@@ -267,9 +267,9 @@
          <div class="card">
             <img class="card-img-top" src="images/img5.png" alt="Card image cap">
             <div class="card-body">
-               <h5 class="card-title border-bottom pb-3">Dubai <a href="#" class="float-right d-inline-flex share"><i class="fas fa-share-alt text-primary"></i></a></h5>
+               <h5 class="card-title border-bottom pb-3">Dubai <a href="https://en.wikipedia.org/wiki/Dubai" class="float-right d-inline-flex share"><i class="fas fa-share-alt text-primary"></i></a></h5>
                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-               <a href="#" class="float-right"  style="color:red !important";>Read more <i class="fas fa-angle-double-right"></i></a>
+               <a href="https://en.wikipedia.org/wiki/Dubai" class="float-right"  style="color:red !important";>Read more <i class="fas fa-angle-double-right"></i></a>
             </div>
          </div>
       </div>
@@ -277,9 +277,9 @@
          <div class="card">
             <img class="card-img-top" src="images/img6.png" alt="Card image cap">
             <div class="card-body">
-               <h5 class="card-title border-bottom pb-3">London <a href="#" class="float-right btn btn-sm btn-info d-inline-flex share"><i class="fas fa-share-alt"></i></a></h5>
+               <h5 class="card-title border-bottom pb-3">London <a href="https://en.wikipedia.org/wiki/London" class="float-right btn btn-sm btn-info d-inline-flex share"><i class="fas fa-share-alt"></i></a></h5>
                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-               <a href="#" class="btn btn-sm btn-info float-right"  style="background-color:#141d27 !important";>Read more <i class="fas fa-angle-double-right"></i></a>
+               <a href="https://en.wikipedia.org/wiki/London" class="btn btn-sm btn-info float-right"  style="background-color:#141d27 !important";>Read more <i class="fas fa-angle-double-right"></i></a>
             </div>
          </div>
       </div>
@@ -287,19 +287,22 @@
          <div class="card bg-light">
             <img class="card-img-top" src="images/swiss.png" alt="Card image cap">
             <div class="card-body">
-               <h5 class="card-title border-bottom pb-3">Swiss <a href="#" class="float-right btn btn-sm btn-info d-inline-flex share"><i class="fas fa-share-alt"></i></a></h5>
+               <h5 class="card-title border-bottom pb-3">Swiss <a href="https://en.wikipedia.org/wiki/Switzerland" class="float-right btn btn-sm btn-info d-inline-flex share"><i class="fas fa-share-alt"></i></a></h5>
                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-               <a href="#" class="btn btn-sm btn-info float-right" style="background-color:red !important";>Read more <i class="fas fa-angle-double-right"></i></a>
+               <a href="https://en.wikipedia.org/wiki/Switzerland" class="btn btn-sm btn-info float-right" style="background-color:red !important";>Read more <i class="fas fa-angle-double-right"></i></a>
             </div>
          </div>
       </div>
    </div>
    
-   
+
 
  
   
 </body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <?php include "includes/footer.php" ?>
 
 </html>
