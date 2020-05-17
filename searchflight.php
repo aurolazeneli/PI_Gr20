@@ -1,7 +1,6 @@
 <?php
 
-include 'dbconnect.php';
-
+ include "MySQL/db.php"; 
 ?>
 
 <!DOCTYPE html>
