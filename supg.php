@@ -25,5 +25,5 @@ echo"<br>";
 $str = "Keto ishin te dhenat!";
 echo $str . "<br>";
 
-echo trim($str,"Keto");
+echo trim($str,"Keto"); // nga fjalia e ruajtur ne $str,prehet pjesa Keto
 ?>
