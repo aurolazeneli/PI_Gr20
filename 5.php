@@ -8,6 +8,8 @@
    <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" href="s.css">
+
   <script type="text/javascript"  defer src="main.js">
 
   </script>
@@ -87,6 +89,28 @@ function showSlides(n) {
 
     <?php rate(5); ?>
    </td>
+ <td style="padding-left:200px">
+     <pre style="font-style: Arial;"> If you like the hotel than you can contact us for reservation
+by the number below or you can get more details from us clicking
+the button! </pre>
+      <style media="screen">
+a[href^=tel] {
+border: 1px solid #ccc;
+border-radius: 5px;
+color: black;
+display: block;
+font-size: 100%;
+font-style: normal;
+
+padding: 5px 10px;
+text-align:center;
+text-decoration: none;
+}
+</style>
+<span class="form-inline"> <a href="contactus.php"><button type="button" name="button" style="margin-left:50px; margin-right:30px;">Contact Us!</button></a>  <a href="tel:012345678" >012345678</a>
+   </td>
+
+
 
  </tr>
  </table>
