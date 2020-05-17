@@ -533,4 +533,152 @@ INSERT INTO `registration` (`id`, `username`, `email`, `password`) VALUES
 (20, 'doruntina', 'doruntina@gmail.com', '53a507318a44a92eb63c10b34f9ef823');
 -- --------------------------------------------------------
 
+-- Dumping data for table `flightdetail`
+--
+
+INSERT INTO `flightdetail` (`id`, `from_city`, `to_city`, `departure_date`, `class`) VALUES
+(1, 'Kosova', 'london', '2020-05-05', 'economy'),
+(2, 'tirana', 'london', '2020-05-27', 'economy'),
+(3, 'Kosova', 'london', '2020-05-20', 'economy'),
+(4, 'Kosova', 'London', '2020-05-20', 'economy'),
+(5, 'Kosova', 'London', '2020-05-20', 'business'),
+(6, 'Kosova', 'Istanbul', '2020-06-06', 'economy'),
+(7, 'Kosova', 'Istanbul', '2020-08-07', 'business'),
+(8, 'Kosova', 'Finland', '2020-06-10', 'economy'),
+(9, 'Kosova', 'Finland', '2020-05-20', 'business'),
+(10, 'Kosova', 'Finland', '2020-06-20', 'economy'),
+(11, 'Kosova', 'Istanbul', '2020-06-07', 'economy'),
+(12, 'Kosova', 'Vienna', '2020-06-06', 'economy'),
+(13, 'Kosova', 'Istanbul', '2020-08-08', 'economy');
+
+-- --------------------------------------------------------
+
+--
+
+
+
+
+
+
+--
+-- Table structure for table `search`
+--
+
+CREATE TABLE `search` (
+  `id` int(11) NOT NULL,
+  `City` varchar(50) NOT NULL,
+  `start_date` date NOT NULL,
+  `end_date` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `search`
+--
+
+INSERT INTO `search` (`id`, `City`, `start_date`, `end_date`) VALUES
+(1, 'Dubai', '2020-05-30', '2020-06-10'),
+(2, 'Maldive', '2020-05-31', '2020-06-05'),
+(4, 'Finland', '2020-06-16', '2020-06-24'),
+(5, 'Greece', '2020-06-04', '2020-06-11'),
+(6, 'Italy', '2020-06-11', '2020-05-21'),
+(7, 'Switzerland', '2020-06-01', '2020-05-12');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `description`
+--
+ALTER TABLE `description`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `des_1` (`hotelno`);
+
+--
+-- Indexes for table `flightdetail`
+--
+ALTER TABLE `flightdetail`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `hotel`
+--
+ALTER TABLE `hotel`
+  ADD PRIMARY KEY (`hotelno`);
+
+--
+-- Indexes for table `images`
+--
+ALTER TABLE `images`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `img` (`hotelno`);
+
+--
+-- Indexes for table `registration`
+--
+ALTER TABLE `registration`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `search`
+--
+ALTER TABLE `search`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `description`
+--
+ALTER TABLE `description`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=145;
+
+--
+-- AUTO_INCREMENT for table `flightdetail`
+--
+ALTER TABLE `flightdetail`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `images`
+--
+ALTER TABLE `images`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=217;
+
+--
+-- AUTO_INCREMENT for table `registration`
+--
+ALTER TABLE `registration`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `search`
+--
+ALTER TABLE `search`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `description`
+--
+ALTER TABLE `description`
+  ADD CONSTRAINT `des_1` FOREIGN KEY (`hotelno`) REFERENCES `hotel` (`hotelno`);
+
+--
+-- Constraints for table `images`
+--
+ALTER TABLE `images`
+  ADD CONSTRAINT `img` FOREIGN KEY (`hotelno`) REFERENCES `hotel` (`hotelno`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
 
