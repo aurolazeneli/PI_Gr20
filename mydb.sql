@@ -398,3 +398,42 @@ INSERT INTO `images` (`id`, `Name`, `image1`, `hotelno`) VALUES
 (122, 'Hotel the Cube', 'i3.2.jpg', 21),
 (123, 'Hotel the Cube', 'i3.3.jpg', 21),
 (124, 'Hotel the Cube', 'i3.4.jpg', 21),
+--
+-- Table structure for table `registration`
+--
+
+CREATE TABLE `registration` (
+  `id` int(11) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `password` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `registration`
+--
+
+INSERT INTO `registration` (`id`, `username`, `email`, `password`) VALUES
+(1, 'lulja', 'lulja@gmail.com', 'e1507b7ee9c4e2611dbd165dcd4f3973'),
+(2, 'vlera', 'vlera@gmail.com', '86b8d1b6adec0e6ee66adf43c16cdad6'),
+(3, 'valon', 'valon@gmail.com', '5727214ebfd4a172c78a993ef35ca1f5'),
+(4, 'dardan', 'dardan@gmail.com', '451dfbbd2758cb97303341b9aaee7208'),
+(5, 'fiek', 'fiek@gmail.com', '058e1d4d2ed87f2148f3c0d1f3236b31'),
+(6, 'blerim', 'blerim@gmail.com', '1858068255305f92d77a7f176eba38f3'),
+(7, 'bleona', 'bleona@gmail.com', '170a60edea50fa381b812c4b1fa8ed1e'),
+(8, 'aurola', 'aurola@gmail.com', '6e87043e04abb4ee4a5e8a5c6eb17cb2'),
+(9, 'belinda', 'belinda@gmail.com', '310f27240a34d11274fefc9b1511fa55'),
+(10, 'bzenelaj', 'bzenelaj@gmail.com', '271971c98796fe6c672e6f8753347381'),
+(11, 'sevdie', 'sevdie@gmail.com', '8f1d7643ae8b0d058e4cf7575086ae9f'),
+(12, 'up', 'up@gmail.com', '46c48bec0d282018b9d167eef7711b2c'),
+(13, 'fimi', 'fimi@gmail.com', '1b98b6f7ccf65bc6989dcdfaaea122ed'),
+(14, 'fna', 'fna@gmail.com', '708c050046fdce4b72a273c8bbdb5129'),
+(15, 'kompjuterika', 'kompjuterika@gmail.com', '29e3e07a75b83f21e83fb197d1e4dc92'),
+(16, 'elektro', 'elektro@gmail.com', '3f0062caa096feac56117e460aa91bdd'),
+(17, 'donika', 'donika@gmail.com', '79f5cfc8f4539abcbfde2f60fe089686'),
+(18, 'valdete', 'valdete@gmail.com', '74e70b41cf47a6b2fe3980f63e441a1e')
+(19, 'hana', 'hana@gmail.com', '52fd46504e1b86d80cfa22c0a1168a9d'),
+(20, 'doruntina', 'doruntina@gmail.com', '53a507318a44a92eb63c10b34f9ef823');
+-- --------------------------------------------------------
+
+
