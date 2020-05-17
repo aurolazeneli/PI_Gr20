@@ -6,7 +6,7 @@
 
 function search()  {
 
-    global $con;
+    global $connection;
 if(isset($_POST["submit"])){
 
     $from =$_POST["from"];
@@ -18,8 +18,8 @@ if(isset($_POST["submit"])){
 
 
 
-    $result = mysqli_query($con, $query);
-    $rowcount = mysqli_num_rows($result);
+    $result = mysqli_query($connection, $query);
+ 
 
     
 
