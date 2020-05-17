@@ -13,6 +13,7 @@ session_start();
 
 $username = "";
 $email = "";
+
 $errors = array();
 try{
 $db =  new MySQLi('localhost','root','','mydb') ;
@@ -32,6 +33,7 @@ finally{
 $username = mysqli_real_escape_string($db, $_POST['username']);
 $email = mysqli_real_escape_string($db, $_POST['email']);
 $password = mysqli_real_escape_string($db, $_POST['password']);
+
 $cpassword = mysqli_real_escape_string($db, $_POST['cpassword']);
 
 //form validation
@@ -74,7 +76,8 @@ array_push($errors,"Email alredy exists");
 
 if(count($errors) == 0){
    
-   $password = md5($password); //this will encrypt the password
+
+        $password = password_hash("$password", PASSWORD_DEFAULT);
    $query = "INSERT INTO registration (username, email, password) VALUES ('$username','$email','$password')";
    mysqli_query($db, $query);
    $_SESSION['username'] =$username;
