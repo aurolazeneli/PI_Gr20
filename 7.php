@@ -74,6 +74,7 @@ function showSlides(n) {
  <tr>
    <th><i>General Facilities </i><span> <hr> </span> </th>
    <th><i>Rating</i> <span> <hr> </span></th>
+    <th ><i style="padding-left:200px">Booking </i><span> <hr> </span> </th>
 
  </tr>
  <tr>
