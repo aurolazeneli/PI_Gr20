@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="searchflight.css">
 </head>
 <body>
-<?php include 'includes/head.php;' ?>
+<?php include "includes/head.php;" ?>
 
   <div class="card">
     <div class="title">
