@@ -4,6 +4,21 @@
 <!doctype html>
 <html lang="en">
   <head>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+      <script src="main.js" type="text/javascript"></script>
+
+
+    <style>
+
+
+
+    #country-list{float:left;list-style:none;margin-top:-3px;padding:0;width:190px;position: absolute;}
+    #country-list li{padding: 10px; background: #f0f0f0; border-bottom: #bbb9b9 1px solid;}
+    #country-list li:hover{background:#ece3d2;cursor: pointer;}
+
+    </style>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,12 +26,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="main.css">
-    <script type="text/javascript"  defer src="main.js">
+
 
     </script>
     <title>Travel</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="jquery-3.4.1.min.js"></script>
+
+
   </head>
   <body>
 
@@ -24,33 +40,48 @@
 
 <nav>
 
-    <form class="form-inline" action="index.php" method="post">
+    <form class="form-inline" action="search.php" method="post">
 
-     <i class="fa fa-search" style="color:white" aria-hidden="true"></i>
-     <input type="search" name="search" placeholder="Search..." id="mysearch" style="width:200px; border: 0;
+
+      <div class="form-inline " style="background-color: transparent;
+      color: #141d27;
+      border: 1px solid white; /* Green */
+      border-radius: 5px;">
+      <div class="frmSearch">
+      <input style="background-color:transparent !important;color:white; border: 0;outline: 0 ; padding: 2px;border-right:1px solid white;"type="text" name="search" placeholder="Search..." id="mysearch" autocomplete="off" />
+
+      <div id="suggesstion-box"></div>
+      </div>
+  <!--   <input type="text" name="search" placeholder="Search..." id="mysearch" style="width:200px; border: 0;
     background: none;
-    -webkit-appearance: none; color: white" value="">
-    <span style="margin-left:70%"> <i class="fa fa-facebook" style="color:white" aria-hidden="true"></i>
-     <i class="fa fa-instagram" style="color:white" aria-hidden="true"></i>
-     <i class="fa fa-youtube-play" style="color:white" aria-hidden="true"></i>
-   <i class="fa fa-twitter" style="color:white" aria-hidden="true"></i></span>
+    -webkit-appearance: none; color: white" value="">-->
+    <input type="submit" class="button1"  name="submit" value="Search">
+
+
+     </div>
+    <span style="margin-left:70%">
+       <a href="https://www.facebook.com/"><i class="fa fa-facebook" style="color:white" aria-hidden="true"></i></a>
+  <a href="https://www.instagram.com/">   <i class="fa fa-instagram" style="color:white" aria-hidden="true"></i></a>
+  <a href="https://www.youtube.com/">  <i class="fa fa-youtube-play" style="color:white" aria-hidden="true"></i></a>
+  <a href="https://www.twitter.com/">  <i class="fa fa-twitter" style="color:white" aria-hidden="true"></i></span></a>
     </form>
-    <hr color="white" style=" margin-left:-7%;height:0.001px; width:90%">
+    <hr color="white" style=" margin-left:-7%;height:0.001px;margin-top: 2px;width:90%">
 
 <?php include "includes/header.php" ?>
 
      <div style="margin-top:30%" class="form-php">
-       <form  action="search.php" method="post">
+       <form  action="oop_search.php" method="post">
   <div class="form-row align-items-center">
   <div class="form-group col-md-4" style="margin-bottom:2px !important;">
       <label class="sr-only" for="inlineFormInputName">Where</label>
        <select id="inputState" name="location" class="form-control">
          <option selected>Where</option>
-         <option>Prishtina</option>
-          <option>London</option>
-           <option>Rome</option>
-            <option>Paris</option>
-             <option>Istanbul</option>
+         <option>Dubai</option>
+          <option>Finland</option>
+           <option>Switzerland</option>
+            <option>Maldive</option>
+             <option>Greece</option>
+             <option>Italy</option>
        </select>
 
     </div>
@@ -133,19 +164,19 @@
   <table class="table table-borderless">
     <tbody>
       <tr>
-        <td> <img src="images/maldiv.jpg" alt="Snow" style="width:100%"></td>
-        <td> <img src="images/maldiv.jpg" alt="Snow" style="width:100%"></td>
-        <td> <img src="images/maldiv.jpg" alt="Snow" style="width:100%"></td>
+        <td style="width:234px ; height: 168px"> <a href="Italy.php" ><img class="imgd" src="images/rome.jpg" alt="Snow" style="width:100%; height:163px;">  </a></td>
+        <td style="width:234px ; height: 168px"> <a href="maldive.php"><img class="imgd" src="images/maldiv.jpg" alt="Snow"style="width:100%; height:163px;"></a></td>
+        <td style="width:234px ; height: 168px"> <a href="switzerland.php"> <img class="imgd" src="images/swiss.png" alt="Snow" style="width:100%; height:163px;"></a></td>
       </tr>
       <tr>
          <td></td>
-        <td><img src="images/maldiv.jpg" alt="Snow" style="width:100%"></td>
-        <td><img src="images/maldiv.jpg" alt="Snow" style="width:100%"></td>
-          <td> <img src="images/maldiv.jpg" alt="Snow" style="width:100%"></td>
+        <td style="width:234px ; height: 168px"> <a href="finland.php"> <img class="imgd" src="images/finland.png" alt="Snow" style="width:100%; height:163px;"></a></td>
+        <td style="width:234px ; height: 168px"><a href="Dubai.php"><img class="imgd" src="images/Dubai.jpg" alt="Snow" style="width:100%; height:163px;"></a></td>
+          <td style="width:234px ; height: 168px"> <a href="greece.php"> <img class="imgd" src="images/gre.jpg" alt="Snow" style="width:100%; height:163px;"></a></td>
       </tr>
-      <tr>  <td colspan="2"><img src="images/maldiv.jpg" alt="Snow" style="width:100%"></td>
-        <th scope="row"><img src="images/maldiv.jpg" alt="Snow" style="width:100%"></th>
-          <td> <img src="images/maldiv.jpg" alt="Snow" style="width:100%"></td>
+      <tr>  <td colspan="2"> <a href="greece.php"> <img class="imgd" src="images/greece1.jpg" alt="Snow" style="width:100%"></a></td>
+        <th scope="row"><a href="maldive.php"> <img class="imgd" src="images/mal.jpg" alt="Snow" style="width:100% ; height:163px;"> </a></th>
+          <td> <a href="switzerland"> <img class="imgd" src="images/sw1.jpg" alt="Snow" style="width:100%; height:163px;"></a</td>
       </tr>
     </tbody>
   </table>
@@ -167,3 +198,4 @@
 </div>
 </section>
 <?php include "includes/footer.php" ?>
+
