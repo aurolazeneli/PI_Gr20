@@ -45,7 +45,7 @@ text-shadow:1px 1px red;"> Dubai Hotels</h1> </i>
             <p1 style="font-size:19px;
             text-shadow:1px 1px red;">Holiday INN</p1>
             <p class="price"> ALL 6,025</p>
-            <p2>Connected to the Dubai Festival </p2>
+            <p2>Connected to the Festival </p2>
             
      </div>
      </a>
