@@ -14,7 +14,7 @@ if(isset($_POST["submit"])){
     $depart = $_POST["depart"];
     $class = $_POST["class"];
 
-    $query = "SELECT * FROM flight_details WHERE from_city = '$from' AND to_city='$to'";
+    $query = "SELECT * FROM flightdetail WHERE from_city = '$from' AND to_city='$to'";
 
 
 
