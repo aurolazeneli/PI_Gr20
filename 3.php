@@ -21,7 +21,7 @@
 </head>
 
 <body>
-<?php include'includes/header.php'?>
+<?php include'includes/head.php'?>
 <i> <p style="text-align:center;font-size:xx-large;text-shadow:1px 1px red;"><?php name(3); ?> </p> </i>
 
 <div class="container" style="align-content: center;">
