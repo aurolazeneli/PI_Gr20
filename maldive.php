@@ -46,7 +46,7 @@
             <p1 style="font-size:19px;
         text-shadow:1px 1px red;">Wave Sound </p1>
             <p class="price"> ALL 9,025</p>
-            <p1> Located in Maldives Islands</p1>
+            <p1>Located in Maldives Islands</p1>
             
      </div>
      </a>
@@ -77,7 +77,7 @@
             <p1 style="font-size:19px;
         text-shadow:1px 1px red;">Fihalhohi Island</p1>
             <p class="price">ALL 10,108</p>
-            <p1>Situated on the South Western </p1>
+            <p1>Situated on South Western </p1>
             
         </div>
         </a>
