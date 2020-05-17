@@ -4,8 +4,8 @@ error_reporting(E_ERROR | E_WARNING | E_PARSE);
 if(!$connection){
       die("Database connection failed");
    }
-  
-$username = $password = "";
+   
+$username =  $password ="";
 $username_err = $password_err = "";
 // Processing form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -19,12 +19,17 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     if(empty(trim($_POST["password"]))){
         $password_err = "Please enter your password.";
     } else{
+
         $password = trim($_POST["password"]);
+       $hash = password_hash("$password", PASSWORD_DEFAULT);
+
+$passwordverify = password_verify($password,$hash);
     }
     // Validate credentials
     if(empty($username_err) && empty($password_err)){
         // Prepare a select statement
-        $sql = "SELECT username, password FROM registration WHERE username = '$username' AND  password='$password'";
+        if($passwordverify){
+        $sql = "SELECT username, password FROM registration WHERE username = '$username' ";
             $result = mysqli_query($connection, $sql);
             while ($row = mysqli_fetch_assoc($result) ) {
               $expiration = time()+(60*60*24*365*4);
@@ -35,6 +40,7 @@ if(isset($_COOKIE['$username'])){
     $someone = "";
     }
            header("location: searchflight.php");
+             }
              }
         }
         else  {
