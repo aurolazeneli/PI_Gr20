@@ -71,38 +71,8 @@ else {
 
  
  }
-
-if ($name_error == '' and $surname_error == '' and $email_error == ''){
-
-$message_body =' ';
-//unset post submit
-unset($_POST['submit']);
-
-// through loop the post 
-foreach($_POST as $key => $value) {
-
-
-    // enter key and values in message body
-    $message_body .= "$key: $value\n";
-
-
 }
 
-//sending messages 
-$to = 'belindazhegrova1@gmail.com';
-$subject ="Contact Form Submit";
-if(mail($to,$subject,$message)) {
-
-$success= "Message sent,thank you for contacting us";
-$name=$surname=$email=$message='';
-
-}
-
-
-}
-
-
-}
 
 function test_input($data) {
 
