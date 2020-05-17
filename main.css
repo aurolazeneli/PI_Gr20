@@ -10,6 +10,12 @@ header{
   width: 100% !important;
 
 }
+.button1 {
+  background-color: transparent;
+  color: white;
+  border: 0; /* Green */
+  border-radius: 5px;
+}
 #main_header{
   padding-top: 10px !important;
   padding-left: 170px;
@@ -78,6 +84,14 @@ nav{
   flex: 25%;
     padding: 5px;
 }
+#a:hover {
+
+  -ms-transform: scale(1.04); /* IE 9 */
+  -webkit-transform: scale(1.04); /* Safari 3-8 */
+  transform: scale(1.04);
+
+}
+
 .v1{
   padding-left: 10px;
   margin-left: 40px;
@@ -130,6 +144,24 @@ nav{
   padding: 5px;
 
 }
+.imgd:hover {
+
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+
+}
+
+.column4 {
+
+  background-repeat: no-repeat !important;
+  background-size: auto;
+  flex: 33.33%;
+  padding: 5px;
+  height: 160px;
+  background-size: 190px 160px !important;
+}
+
 
 .column2  img{
   color:  rgb(255, 0, 0);opacity:0.8;
