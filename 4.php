@@ -18,6 +18,7 @@
 </head>
 
 <body>
+  
 <?php include'includes/head.php'?>
 <i> <p style="text-align:center;font-size:xx-large;text-shadow:1px 1px red;"><?php name(4); ?> </p> </i>
 
