@@ -1,6 +1,61 @@
 <?php include 'formprocess.php'; ?>
 
 
+
+<?php  
+
+
+// Include packages and files for PHPMailer and SMTP protocol
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+require 'PHPMailer-master/src/Exception.php';
+require 'PHPMailer-master/src/PHPMailer.php';
+require 'PHPMailer-master/src/SMTP.php';
+
+
+if(isset($_POST['submit']))
+{
+	$email=$_POST['email'];
+	$message=$_POST['message'];
+	$name=$_POST['fname'];
+//Initialize PHP Mailer and set SMTP as mailing protocol
+$mail = new PHPMailer();
+$mail->IsSMTP();
+$mail->Mailer = "smtp";
+
+//Set required parameters for making an SMTP connection like server,port..
+$mail->SMTPDebug  = 1;  
+$mail->SMTPAuth   = TRUE;
+$mail->SMTPSecure = "tls";
+$mail->Port       = 587;
+$mail->Host       = "smtp.gmail.com";
+$mail->Username   = "myjourneyphp@gmail.com";
+$mail->Password   = "travel123#";
+
+//Set the required parameters for email header and bod
+$mail->IsHTML(true);
+$mail->AddAddress("myjourneyphp@gmail.com", "travel agency");
+$mail->SetFrom($email);
+$mail->Subject = "Someone submited your form";
+$mail->addReplyTo($email,$name);
+
+$mail->SMTPDebug=false;
+
+
+
+$mail->MsgHTML($message); 
+
+if(!$mail->Send()) {
+  echo "Error while sending Email.";
+  var_dump($mail);
+} else {
+  echo "Email sent successfully";
+}
+}
+
+
+?>
+
 <html>
     <head>
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -28,6 +83,7 @@
         <form action="<?= $_SERVER['PHP_SELF'];?>" method="post">
 
 			<div class="contact-form">
+			<h2> <?php  $result;?></h2>
             
 				<div class="form-group">
 				  <label class="control-label col-sm-2" for="fname">First Name:</label>
@@ -55,13 +111,14 @@
 				  <div class="col-sm-10">
                     <textarea class="form-control" rows="5" id="comment" name="message" value="<?=$message?>"> </textarea>
                     <span class="success"><?= $success ?> </span>
-                    
+			              
 				  </div>
 				</div>
 				<div class="form-group">        
 				  <div class="col-sm-offset-2 col-sm-10">
 					<button type="submit" class="btn btn-default" name="submit">Submit</button>
 				  </div>
+				  <span class="success"><?= $success ?> </span>
                 </div>
             
             </div>
@@ -69,5 +126,4 @@
 		</div>
 	</div>
 </div>
-
 <html>
