@@ -1,6 +1,4 @@
 <?php include 'formprocess.php'; ?>
-<?php include 'includes/head.php'; ?>
-
 
 
 <?php  
@@ -69,9 +67,8 @@ if(!$mail->Send()) {
     <link rel="stylesheet" type="text/css" href="main.css">
 <!------ Include the above in your HEAD tag ---------->
 </head>
-
-
-
+<body>
+<?php include 'includes/head.php'; ?>
 <div class="container contact">
 
 	<div class="row">
@@ -130,4 +127,5 @@ if(!$mail->Send()) {
 		</div>
 	</div>
 </div>
+	</body>
 <html>
