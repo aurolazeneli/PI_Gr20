@@ -92,6 +92,15 @@ function showSlides(n) {
      <pre style="font-style: Arial;"> If you like the hotel than you can contact us for reservation
 by the number below or you can get more details from us clicking
 the button! </pre>
+   <style media="screen">
+a[href^=tel] {
+border: 1px solid #ccc;
+border-radius: 5px;
+color: black;
+display: block;
+font-size: 100%;
+font-style: normal;
+
  </tr>
  </table>
  </p>
